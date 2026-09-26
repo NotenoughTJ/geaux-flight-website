@@ -125,7 +125,7 @@ em { font-weight: inherit; }
 .brand-name strong { font-size: 1.06rem; font-weight: 600; line-height: 1.15; letter-spacing: .15em; }
 .brand-name small { font-size: .66rem; letter-spacing: .34em; line-height: 1.8; }
 .site-nav { display: flex; align-items: center; gap: clamp(1.1rem, 2.15vw, 2.3rem); }
-.site-nav > a { font-size: .875rem; text-decoration: none; white-space: nowrap; }
+.site-nav > a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; text-decoration: none; white-space: nowrap; }
 .site-nav > a:not(.nav-contact) { padding-block: .5rem; }
 .site-nav > a:hover, .site-nav > a[aria-current='page'] { color: var(--gold); }
 .nav-contact { border: 1px solid #ffffff70; padding: .6rem 1.1rem; }
@@ -191,7 +191,7 @@ em { font-weight: inherit; }
 .contact-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 1.2rem; padding-bottom: .3rem; }
 .email-link { font-size: clamp(1rem, 1.5vw, 1.5rem); text-decoration: none; border-bottom: 1px solid #627567; padding-bottom: .6rem; overflow-wrap: anywhere; }
 .email-link:hover { color: var(--gold); }
-.copy-button { border: 0; background: none; color: #c6cfc4; padding: .4rem 0; font-size: .875rem; text-decoration: underline; text-underline-offset: .3em; }
+.copy-button { min-height: 44px; border: 0; background: none; color: #c6cfc4; padding: .4rem 0; font-size: .875rem; text-decoration: underline; text-underline-offset: .3em; }
 .copy-status { font-size: .875rem; color: var(--gold); min-height: 1.5em; margin: 0; }
 .site-footer { background: var(--night); color: #b5c0b8; font-size: .8rem; }
 .footer-inner { border-top: 1px solid #ffffff25; padding-block: 2rem; display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; }
@@ -257,7 +257,7 @@ em { font-weight: inherit; }
 @media (min-width: 1600px) { .hero { min-height: 900px; } }
 @media (max-width: 1100px) {
   .site-nav { gap: 1.15rem; }
-  .site-nav > a { font-size: .8rem; }
+  .site-nav > a { font-size: .875rem; }
   .header-inner { gap: 1.2rem; }
   .brand-name strong { font-size: .93rem; }
   .hero { min-height: 770px; }

@@ -33,6 +33,11 @@ if (menuButton && navigation) {
   document.addEventListener('click', event => {
     if (!event.target.closest('.site-header')) closeMenu();
   });
+  // Let keyboard users leave the disclosure menu without leaving scrolling locked.
+  document.addEventListener('focusin', event => {
+    if (menuButton.getAttribute('aria-expanded') === 'true' &&
+        !event.target.closest('.site-header')) closeMenu();
+  });
   window.matchMedia('(min-width: 861px)').addEventListener('change', event => {
     if (event.matches) closeMenu();
   });
