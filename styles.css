@@ -358,6 +358,12 @@ em { font-weight: inherit; }
   .resume-main > section, .resume-sidebar section { margin-bottom: 1.25rem; }
   .resume-main h2 { font-size: 16pt; padding-bottom: .4rem; margin-bottom: .7rem; }
   .resume-main h3 { font-size: 11pt; }
+  /* Keep section titles with their content and short sidebar groups together. */
+  .resume-main h2, .resume-main h3, .resume-sidebar h2 { break-after: avoid; }
+  .resume-sidebar section { break-inside: avoid; }
+  .resume-layout p, .resume-layout li { orphans: 3; widows: 3; }
+  /* These links navigate the website; the contact email remains on the printout. */
+  .resume-layout .text-link { display: none; }
   .resume-sidebar { border: 0; padding: 0; }
   .resume-sidebar p, .resume-sidebar li, .resume-sidebar .small, .job-meta { font-size: 9pt; }
   .resume-main li { font-size: 9pt; margin-bottom: .35rem; }
