@@ -53,10 +53,12 @@ document.querySelectorAll('[data-copy-email]').forEach(button => {
       if (status) status.textContent = 'Select and copy the email address above.';
     }
   });
+  button.hidden = false;
 });
 
 document.querySelectorAll('[data-print]').forEach(button => {
   button.addEventListener('click', () => window.print());
+  button.hidden = false;
 });
 
 document.querySelectorAll('[data-year]').forEach(element => {

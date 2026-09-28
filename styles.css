@@ -78,6 +78,7 @@
   --gutter: clamp(1.25rem, 5vw, 5.5rem);
 }
 *, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
 body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
 body.menu-open { overflow: hidden; }
